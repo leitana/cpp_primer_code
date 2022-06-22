@@ -27,7 +27,7 @@ int main()
     //     cout << word << endl;
     // }
 
-    // getline 读取一整行
+    // getline 读取丢�整行
     // string line;
     // while (getline(cin, line))
     // {
