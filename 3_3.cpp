@@ -25,12 +25,24 @@ int main()
     //     vec.push_back(i);
     // }
 
-    vector<string> vec;
-    string i;
-    while (cin >> i)
+    // vector<string> vec;
+    // string i;
+    // while (cin >> i)
+    // {
+    //     vec.push_back(i);
+    // }
+
+    vector<int> vec{1, 2, 3, 4, 5, 6, 7, 10};
+    for (auto &x : vec)
     {
-        vec.push_back(i);
+        x *= x;
     }
+
+    for (auto i : vec)
+    {
+        cout << i << " ";
+    }
+    cout << endl;
 
     return 0;
 }
