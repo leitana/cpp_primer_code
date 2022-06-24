@@ -7,6 +7,7 @@ struct Sale_data
     unsigned units_sold = 0;
     double revenue = 0.0;
 };
+
 int main()
 {
     Sale_data total;
