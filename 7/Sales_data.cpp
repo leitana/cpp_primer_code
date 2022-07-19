@@ -5,6 +5,7 @@ using namespace std;
 struct Sales_data
 {
     string isBn() const { return bookNo; };
+    // string isBn1() { return bookNo; };
     Sales_data &combine(const Sales_data &);
     double avg_price() const;
     string bookNo;
@@ -15,6 +16,8 @@ struct Sales_data
 int main()
 {
     Sales_data total;
+    // Sales_data test;
+    // test.isBn1();
     if (cin >> total.bookNo >> total.unit_sold >> total.revenue)
     {
         Sales_data trans;
