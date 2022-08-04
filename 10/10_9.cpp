@@ -20,10 +20,18 @@ void print(vector<string> &word)
     cout << endl;
 }
 
+//根据长度排序 stable_sort
+bool is_shorter(string const &lhs, string const &rhs)
+{
+    return lhs.size() < rhs.size();
+}
+
 int main()
 {
     vector<string> vec = {"the", "fox", "jumps", "red", "over", "quick", "red", "slow", "the", "turtle"};
     print(vec);
     elimDups(vec);
+    print(vec);
+    stable_sort(vec.begin(), vec.end(), is_shorter);
     print(vec);
 }
